@@ -125,7 +125,27 @@
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
 .awayButtons__fieldGoal,
-.quarterButton_change {
+.quarterButton_change,
+.timerButtons_reset,
+.timerButtons_start {
   margin: 1rem;
   border-radius: 4px;
+}
+
+
+.button-primary:hover {
+  background-color: #2641d4;
+  border: 1px solid #1b1f2b;
+}
+
+.button-primary-active {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
+}
+
+.button-primary-inactive {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
 }
