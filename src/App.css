@@ -118,6 +118,7 @@
 .quarterButton_change {
   font-family: "Ozone";
   font-weight: bold;
+  border: 1px solid white;
 }
 
 .homeButtons__touchdown,

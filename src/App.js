@@ -1,5 +1,5 @@
 //TODO: STEP 1 - Import the useState hook.
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 
@@ -7,6 +7,25 @@ function App() {
   //TODO: STEP 2 - Establish your application's state with some useState hooks.  You'll need one for the home score and another for the away score.
 const [awayScore, setAwayScore] = useState(0);
 const [homeScore, setHomeScore] = useState(0);
+// const [seconds, setSeconds] = useState(0);
+// const [isActive, setIsActive] = useState(false);
+
+// function toggle() {
+//   setSeconds(0);
+//   setIsActive(false);
+// }
+
+// useEffect(() => {
+//   let interval = null;
+//   if (isActive) {
+//     interval = setInterval(() => {
+//       setSeconds(seconds => seconds =1);
+//     }, 1000);
+//   } else if (!isActive && second !== 0) {
+//     clearInterval(interval);
+//   }
+//   return () => clearInterval(interval);
+// }, [isActive, seconds]);
 
   return (
     <div className="container">
@@ -36,6 +55,9 @@ const [homeScore, setHomeScore] = useState(0);
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={() => setAwayScore(awayScore + 7)}>Away Touchdown</button>
           <button className="awayButtons__fieldGoal" onClick={() => setAwayScore(awayScore + 3)}>Away Field Goal</button>
+        </div>
+        <div className="timerButtons">
+          {/* <button className="button" onClick={reset}>Reset</button> */}
         </div>
       </section>
     </div>
