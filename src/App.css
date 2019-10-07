@@ -83,7 +83,8 @@
 .down,
 .toGo,
 .ballOn,
-.quarter {
+.quarter,
+.quarterButton {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -106,17 +107,24 @@
   border: 1px solid white;
 }
 
-.buttons {
+.buttons,
+.quarterButton {
   width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
+.quarterButton_change {
+  font-family: "Ozone";
+  font-weight: bold;
+}
+
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal,
+.quarterButton_change {
   margin: 1rem;
   border-radius: 4px;
 }
