@@ -42,7 +42,7 @@ useEffect(() => {
 
             <div className="home__score">{homeScore}</div>
           </div>
-          <div className="timer">{seconds}</div>
+          <div className="timer">00:{seconds}</div>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
@@ -61,7 +61,7 @@ useEffect(() => {
           <button className="awayButtons__fieldGoal" onClick={() => setAwayScore(awayScore + 3)}>Away Field Goal</button>
         </div>
         <div className="timerButtons">
-          <button className="{`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}" onClick={toggle}>{isActive ? 'Pause' : 'Start'}</button>
+          <button className="{`timerButtons_start timerButtons_start primary timerButtons_start primary-${isActive ? 'active' : 'inactive'}`}" onClick={toggle}>{isActive ? 'Pause' : 'Start'}</button>
           <button className="timerButtons_reset" onClick={reset}>Reset</button> 
         </div>
       </section>
